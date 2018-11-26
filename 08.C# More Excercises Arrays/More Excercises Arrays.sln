@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 1. Encyrupt Sort and Print Array", "Problem 1. Encyrupt Sort and Print Array\Problem 1. Encyrupt Sort and Print Array.csproj", "{9F5397AF-1F12-445A-8867-E007337C1746}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 2. Pascal Triangle", "Problem 2. Pascal Triangle\Problem 2. Pascal Triangle.csproj", "{1146DE52-2249-44B4-BA63-51B9C899700E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F5397AF-1F12-445A-8867-E007337C1746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F5397AF-1F12-445A-8867-E007337C1746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F5397AF-1F12-445A-8867-E007337C1746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F5397AF-1F12-445A-8867-E007337C1746}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1146DE52-2249-44B4-BA63-51B9C899700E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1146DE52-2249-44B4-BA63-51B9C899700E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1146DE52-2249-44B4-BA63-51B9C899700E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1146DE52-2249-44B4-BA63-51B9C899700E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81BA7BA1-E599-4AE7-980F-AD4817882993}
+	EndGlobalSection
+EndGlobal
