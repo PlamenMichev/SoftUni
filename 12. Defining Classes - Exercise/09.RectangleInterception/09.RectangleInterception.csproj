@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>_09.RectangleInterception</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="09.RectangleIntersection.csproj" />
+  </ItemGroup>
+
+</Project>

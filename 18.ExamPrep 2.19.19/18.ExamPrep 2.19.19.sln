@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Hospital", "01.Hospital\01.Hospital.csproj", "{6C231224-7660-48E3-8A8A-AB1131188193}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Sneaking v.2", "02.Sneaking v.2\02.Sneaking v.2.csproj", "{DEF34A88-4BA0-4879-B1FC-7EFD479C3DAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C231224-7660-48E3-8A8A-AB1131188193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C231224-7660-48E3-8A8A-AB1131188193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C231224-7660-48E3-8A8A-AB1131188193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C231224-7660-48E3-8A8A-AB1131188193}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEF34A88-4BA0-4879-B1FC-7EFD479C3DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEF34A88-4BA0-4879-B1FC-7EFD479C3DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEF34A88-4BA0-4879-B1FC-7EFD479C3DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEF34A88-4BA0-4879-B1FC-7EFD479C3DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E4E4B92-993D-4789-B2BE-9B2980B8FDB9}
+	EndGlobalSection
+EndGlobal

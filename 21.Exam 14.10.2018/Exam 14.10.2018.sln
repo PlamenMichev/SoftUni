@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Data Transfer", "01. Data Transfer\01. Data Transfer.csproj", "{6E909C7D-B047-4ABD-A457-820C4833A998}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Tagram", "02.Tagram\02.Tagram.csproj", "{D38B0306-81D2-4010-B7D7-F5F14BA2760B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E909C7D-B047-4ABD-A457-820C4833A998}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E909C7D-B047-4ABD-A457-820C4833A998}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E909C7D-B047-4ABD-A457-820C4833A998}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E909C7D-B047-4ABD-A457-820C4833A998}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D38B0306-81D2-4010-B7D7-F5F14BA2760B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D38B0306-81D2-4010-B7D7-F5F14BA2760B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D38B0306-81D2-4010-B7D7-F5F14BA2760B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D38B0306-81D2-4010-B7D7-F5F14BA2760B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F9D9427-F3FF-4546-8AB5-508519E0ED77}
+	EndGlobalSection
+EndGlobal
