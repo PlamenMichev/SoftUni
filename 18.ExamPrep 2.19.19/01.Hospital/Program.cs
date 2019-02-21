@@ -9,7 +9,7 @@ namespace _01.Hospital
     {
         static void Main(string[] args)
         {
-            var departments = new Dictionary<string, string[][]>();
+            var departments = new Dictionary<string, Dictionary<int, List<string>>>();
             var doctors = new Dictionary<string, List<string>>();
 
             string input = Console.ReadLine();
@@ -22,33 +22,20 @@ namespace _01.Hospital
 
                 if (departments.ContainsKey(department) == false)
                 {
-                    departments[department] = new string[20][];
+                    departments[department] = new Dictionary<int, List<string>>();
                 }
 
-                bool isPatientsInRoom = false;
                 for (int room = 0; room < 20; room++)
                 {
-                    if (departments[department][room] == null)
+                    if (!departments[department].ContainsKey(room))
                     {
-                        departments[department][room] = new string[3];
+                        departments[department][room] = new List<string>();
                     }
 
-                    if (departments[department][room].Any(b => b == null))
+                    if (departments[department][room].Count < 3)
                     {
-                        for (int bed = 0; bed < 3; bed++)
-                        {
-                            if (departments[department][room][bed] == null)
-                            {
-                                departments[department][room][bed] = patient;
-                                isPatientsInRoom = true;
-                                break;
-                            }
-                        }
-
-                        if (isPatientsInRoom)
-                        {
-                            break;
-                        }
+                        departments[department][room].Add(patient);
+                        break;
                     }
                 }
 
@@ -69,16 +56,9 @@ namespace _01.Hospital
                 {
                     foreach (var room in departments[input])
                     {
-                        if (room == null)
+                        foreach (var patient in room.Value)
                         {
-                            continue;
-                        }
-                        foreach (var patient in room)
-                        {
-                            if (patient != null)
-                            {
-                                Console.WriteLine(string.Join(Environment.NewLine, patient));
-                            }
+                            Console.WriteLine(string.Join(Environment.NewLine, patient));
                         }
 
                     }
@@ -100,14 +80,12 @@ namespace _01.Hospital
                         , StringSplitOptions.RemoveEmptyEntries);
                     string department = tokens[0];
                     int room = int.Parse(tokens[1]) - 1;
-                    if (departments[department][room] != null)
+                    foreach (var bed in departments[department][room].OrderBy(x => x))
                     {
-                        foreach (var bed in departments[department][room].Where(p => p != null).OrderBy(x => x))
-                        {
-                            Console.WriteLine(string.Join(Environment.NewLine, bed));
+                        Console.WriteLine(string.Join(Environment.NewLine, bed));
 
-                        }
                     }
+
                 }
                 input = Console.ReadLine();
             }
