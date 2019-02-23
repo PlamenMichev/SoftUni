@@ -54,7 +54,6 @@ namespace Problem_7._Knight_Game
             
 
             Console.WriteLine(count);
-            //Console.WriteLine(string.Join(Environment.NewLine, matrix.Select(r => string.Join(" ", r))));
         }
 
         private static int CountAttacks(char[][] matrix, int row, int col)
