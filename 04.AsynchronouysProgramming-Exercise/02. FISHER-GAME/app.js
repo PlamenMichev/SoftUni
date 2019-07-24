@@ -116,7 +116,11 @@ function attachEvents() {
             baitInput: this.parentElement.querySelectorAll('input')[4],
             captureTimeInput: this.parentElement.querySelectorAll('input')[5],
         };
-        
+
+        console.log(parentInputs.anglerInput.value,
+             parentInputs.captureTimeInput.value, parentInputs.baitInput.value, 
+             parentInputs.locationInput.value,parentInputs.speciesInput.value, parentInputs.weightInput.value)
+
         if (parentInputs.anglerInput.value === '' ||
             parentInputs.weightInput.value === '' ||
             parentInputs.speciesInput.value === '' ||
