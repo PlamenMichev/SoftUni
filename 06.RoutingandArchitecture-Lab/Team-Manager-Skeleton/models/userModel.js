@@ -1,18 +1,5 @@
 const userModel = function () {
 
-    const getTeams = function (params) {
-        const id = JSON.parse(params)._id;
-        const authToken = JSON.parse(params).authtoken;
-        const url = `/user/${storage.appKey}/${id}`;
-        console.log(url);
-        const headers = {
-            Authorization: `Kinvey ${authToken}`,
-            headers: {}
-        }
-
-        return requester.get(url, headers);
-    }
-
     const register = function (params) {
         let data = {
             username: params.username,
@@ -65,6 +52,5 @@ const userModel = function () {
         register,
         login,
         logout,
-        getTeams
     }
 }();

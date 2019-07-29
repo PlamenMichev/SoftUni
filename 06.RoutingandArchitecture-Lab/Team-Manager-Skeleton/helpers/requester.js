@@ -13,12 +13,12 @@ const requester = function () {
 
     const put = function (url, headers) {
         headers.method = "PUT";
-        return makeRequest(url, headers);
+        return makeRequest(baseUrl + url, headers);
     };
 
     const del = function (url, headers) {
         headers.method = "DELETE";
-        return makeRequest(url, headers);
+        return makeRequest(baseUrl + url, headers);
     };
 
     const makeRequest = function (url, headers) {
@@ -30,7 +30,6 @@ const requester = function () {
             headers.headers["Authorization"] = `Kinvey ${token}`;
         }
         
-
         return fetch(url, headers);
     };
 
