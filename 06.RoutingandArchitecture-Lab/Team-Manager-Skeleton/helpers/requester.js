@@ -30,6 +30,7 @@ const requester = function () {
             headers.headers["Authorization"] = `Kinvey ${token}`;
         }
         
+        debugger;
         return fetch(url, headers);
     };
 

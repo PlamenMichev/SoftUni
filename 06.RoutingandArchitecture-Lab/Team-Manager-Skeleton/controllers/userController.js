@@ -21,6 +21,7 @@ const userController = function () {
 
     const postRegister = function (context) {
 
+        debugger;
         userModel.register(context.params)
             .then(helper.handler)
             .then((data) => {
