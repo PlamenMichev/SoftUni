@@ -55,6 +55,7 @@ namespace CatShop.Controllers
             {
                 return RedirectToAction("Index");
             }
+
             using (var db = new CatDbContext())
             {
                 Cat model = db.Cats.ToList().FirstOrDefault(x => x.Id == id);
