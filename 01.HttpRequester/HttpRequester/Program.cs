@@ -58,6 +58,7 @@ namespace HttpRequester
         {
             string fileName = $"{pageName}Html.txt";
             string result = "";
+
             try
             {
                 //Reads html from file
@@ -85,7 +86,7 @@ namespace HttpRequester
             string pattern = @"\/[A-Za-z]+";
             Regex regex = new Regex(pattern);
             var page = regex.Match(request.Substring(0, 20));
-            string result = "";
+            string result;
 
             //Check if it is home 
             if (page.Success == false)
