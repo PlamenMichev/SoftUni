@@ -1,0 +1,14 @@
+{
+  "name": "cat-shelter",
+  "version": "1.0.0",
+  "description": "\"Cat Shelter\" is very simple cat catalog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "formidable": "^1.2.2"
+  }
+}
