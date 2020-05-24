@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # SoftUni
 # Softuni-Programming Basics
 =======
@@ -9,3 +10,7 @@ Softuni course teaching essential conseptions contectet with OOP
 =======
 # Softuni-JS-Essentials
 >>>>>>> JsEssentials/master
+=======
+# Softuni-JS-Advanced
+Learning advanced features of JS
+>>>>>>> JsAdvanced/master
