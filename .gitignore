@@ -6,11 +6,14 @@
 # User-specific files
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *.rsuser
 =======
 >>>>>>> ProgrammingBasics/master
 =======
 >>>>>>> c#Advanced/master
+=======
+>>>>>>> C#OOP/master
 *.suo
 *.user
 *.userosscache
@@ -21,6 +24,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Mono auto generated files
 mono_crash.*
 
@@ -28,6 +32,8 @@ mono_crash.*
 >>>>>>> ProgrammingBasics/master
 =======
 >>>>>>> c#Advanced/master
+=======
+>>>>>>> C#OOP/master
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -37,16 +43,20 @@ x64/
 x86/
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 =======
 >>>>>>> ProgrammingBasics/master
 =======
 >>>>>>> c#Advanced/master
+=======
+>>>>>>> C#OOP/master
 bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 [Ll]ogs/
@@ -54,6 +64,8 @@ bld/
 >>>>>>> ProgrammingBasics/master
 =======
 >>>>>>> c#Advanced/master
+=======
+>>>>>>> C#OOP/master
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -67,6 +79,7 @@ Generated\ Files/
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 # NUnit
@@ -83,6 +96,11 @@ TestResult.xml
 *.VisualState.xml
 TestResult.xml
 >>>>>>> c#Advanced/master
+=======
+# NUNIT
+*.VisualState.xml
+TestResult.xml
+>>>>>>> C#OOP/master
 
 # Build Results of an ATL Project
 [Dd]ebugPS/
@@ -98,12 +116,16 @@ project.fragment.lock.json
 artifacts/
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **/Properties/launchSettings.json
 >>>>>>> ProgrammingBasics/master
 =======
 **/Properties/launchSettings.json
 >>>>>>> c#Advanced/master
+=======
+**/Properties/launchSettings.json
+>>>>>>> C#OOP/master
 
 # StyleCop
 StyleCopReport.xml
@@ -113,6 +135,7 @@ StyleCopReport.xml
 *_p.c
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *_h.h
 =======
 *_i.h
@@ -120,6 +143,9 @@ StyleCopReport.xml
 =======
 *_i.h
 >>>>>>> c#Advanced/master
+=======
+*_i.h
+>>>>>>> C#OOP/master
 *.ilk
 *.meta
 *.obj
@@ -138,11 +164,14 @@ StyleCopReport.xml
 *.tmp_proj
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *_wpftmp.csproj
 =======
 >>>>>>> ProgrammingBasics/master
 =======
 >>>>>>> c#Advanced/master
+=======
+>>>>>>> C#OOP/master
 *.log
 *.vspscc
 *.vssscc
@@ -187,6 +216,7 @@ _ReSharper*/
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # JustCode is a .NET coding add-in
 .JustCode
@@ -197,6 +227,11 @@ _ReSharper*/
 .JustCode
 
 >>>>>>> c#Advanced/master
+=======
+# JustCode is a .NET coding add-in
+.JustCode
+
+>>>>>>> C#OOP/master
 # TeamCity is a build add-in
 _TeamCity*
 
@@ -256,12 +291,15 @@ PublishScripts/
 *.nupkg
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # NuGet Symbol Packages
 *.snupkg
 =======
 >>>>>>> ProgrammingBasics/master
 =======
 >>>>>>> c#Advanced/master
+=======
+>>>>>>> C#OOP/master
 # The packages folder can be ignored because of Package Restore
 **/[Pp]ackages/*
 # except build/, which is used as an MSBuild target.
@@ -288,17 +326,21 @@ _pkginfo.txt
 *.appx
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *.appxbundle
 *.appxupload
 =======
 >>>>>>> ProgrammingBasics/master
 =======
 >>>>>>> c#Advanced/master
+=======
+>>>>>>> C#OOP/master
 
 # Visual Studio cache files
 # files ending in .cache can be ignored
 *.[Cc]ache
 # but keep track of directories ending in .cache
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 !?*.[Cc]ache/
@@ -308,6 +350,9 @@ _pkginfo.txt
 =======
 !*.[Cc]ache/
 >>>>>>> c#Advanced/master
+=======
+!*.[Cc]ache/
+>>>>>>> C#OOP/master
 
 # Others
 ClientBin/
@@ -322,6 +367,7 @@ orleans.codegen.cs
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Including strong name files can present a security risk
 =======
 # Including strong name files can present a security risk 
@@ -329,6 +375,9 @@ orleans.codegen.cs
 =======
 # Including strong name files can present a security risk 
 >>>>>>> c#Advanced/master
+=======
+# Including strong name files can present a security risk 
+>>>>>>> C#OOP/master
 # (https://github.com/github/gitignore/pull/2483#issue-259490424)
 #*.snk
 
@@ -361,6 +410,7 @@ ServiceFabricBackup/
 *.rptproj.rsuser
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *- [Bb]ackup.rdl
 *- [Bb]ackup ([0-9]).rdl
 *- [Bb]ackup ([0-9][0-9]).rdl
@@ -368,6 +418,8 @@ ServiceFabricBackup/
 >>>>>>> ProgrammingBasics/master
 =======
 >>>>>>> c#Advanced/master
+=======
+>>>>>>> C#OOP/master
 
 # Microsoft Fakes
 FakesAssemblies/
@@ -405,11 +457,14 @@ paket-files/
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CodeRush personal settings
 .cr/personal
 =======
 =======
 >>>>>>> c#Advanced/master
+=======
+>>>>>>> C#OOP/master
 # JetBrains Rider
 .idea/
 *.sln.iml
@@ -417,9 +472,12 @@ paket-files/
 # CodeRush
 .cr/
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ProgrammingBasics/master
 =======
 >>>>>>> c#Advanced/master
+=======
+>>>>>>> C#OOP/master
 
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
@@ -446,6 +504,7 @@ OpenCover/
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Azure Stream Analytics local run output
 =======
 # Azure Stream Analytics local run output 
@@ -453,6 +512,9 @@ OpenCover/
 =======
 # Azure Stream Analytics local run output 
 >>>>>>> c#Advanced/master
+=======
+# Azure Stream Analytics local run output 
+>>>>>>> C#OOP/master
 ASALocalRun/
 
 # MSBuild Binary and Structured Log
@@ -461,6 +523,7 @@ ASALocalRun/
 # NVidia Nsight GPU debugger configuration file
 *.nvuser
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 # MFractors (Xamarin productivity tool) working folder
@@ -485,3 +548,7 @@ MigrationBackup/
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
 >>>>>>> c#Advanced/master
+=======
+# MFractors (Xamarin productivity tool) working folder 
+.mfractor/
+>>>>>>> C#OOP/master
