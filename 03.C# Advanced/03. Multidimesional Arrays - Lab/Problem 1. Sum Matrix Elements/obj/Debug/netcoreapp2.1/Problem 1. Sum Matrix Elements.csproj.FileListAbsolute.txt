@@ -1,0 +1,10 @@
+D:\Softuni-Courses(Repo)\SoftUni\03.C# Advanced\03. Multidimesional Arrays - Lab\Problem 1. Sum Matrix Elements\bin\Debug\netcoreapp2.1\Problem 1. Sum Matrix Elements.deps.json
+D:\Softuni-Courses(Repo)\SoftUni\03.C# Advanced\03. Multidimesional Arrays - Lab\Problem 1. Sum Matrix Elements\bin\Debug\netcoreapp2.1\Problem 1. Sum Matrix Elements.runtimeconfig.json
+D:\Softuni-Courses(Repo)\SoftUni\03.C# Advanced\03. Multidimesional Arrays - Lab\Problem 1. Sum Matrix Elements\bin\Debug\netcoreapp2.1\Problem 1. Sum Matrix Elements.runtimeconfig.dev.json
+D:\Softuni-Courses(Repo)\SoftUni\03.C# Advanced\03. Multidimesional Arrays - Lab\Problem 1. Sum Matrix Elements\bin\Debug\netcoreapp2.1\Problem 1. Sum Matrix Elements.dll
+D:\Softuni-Courses(Repo)\SoftUni\03.C# Advanced\03. Multidimesional Arrays - Lab\Problem 1. Sum Matrix Elements\bin\Debug\netcoreapp2.1\Problem 1. Sum Matrix Elements.pdb
+D:\Softuni-Courses(Repo)\SoftUni\03.C# Advanced\03. Multidimesional Arrays - Lab\Problem 1. Sum Matrix Elements\obj\Debug\netcoreapp2.1\Problem 1. Sum Matrix Elements.AssemblyInfoInputs.cache
+D:\Softuni-Courses(Repo)\SoftUni\03.C# Advanced\03. Multidimesional Arrays - Lab\Problem 1. Sum Matrix Elements\obj\Debug\netcoreapp2.1\Problem 1. Sum Matrix Elements.AssemblyInfo.cs
+D:\Softuni-Courses(Repo)\SoftUni\03.C# Advanced\03. Multidimesional Arrays - Lab\Problem 1. Sum Matrix Elements\obj\Debug\netcoreapp2.1\Problem 1. Sum Matrix Elements.dll
+D:\Softuni-Courses(Repo)\SoftUni\03.C# Advanced\03. Multidimesional Arrays - Lab\Problem 1. Sum Matrix Elements\obj\Debug\netcoreapp2.1\Problem 1. Sum Matrix Elements.pdb
+D:\Softuni-Courses(Repo)\SoftUni\03.C# Advanced\03. Multidimesional Arrays - Lab\Problem 1. Sum Matrix Elements\obj\Debug\netcoreapp2.1\Problem 1. Sum Matrix Elements.genruntimeconfig.cache
