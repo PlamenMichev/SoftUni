@@ -22,7 +22,6 @@ module.exports = async (req, res) => {
     if (pathname.startsWith('/content') && req.method === 'GET') {
 
         if (pathname.endsWith('png') || pathname.endsWith('jpg') || pathname.endsWith('jpeg') || pathname.endsWith('ico') && req.method === 'GET') {
-            console.log(path.join(`./${pathname}`));
             await fs.readFile(path.join(`./${pathname}`), (err, data) => {
                 res.write(data);
                 res.end();

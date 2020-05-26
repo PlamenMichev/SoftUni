@@ -19,7 +19,7 @@
         </nav>
         <h1>Cat Shelter</h1>
     </header>
-        <form action="/cats-find-new-home/{{id}}" class="cat-form">
+        <form action="/cats-find-new-home/{{id}}" method="post" class="cat-form">
             <h2>Shelter the cat</h2>
             <img src="{{image}}" alt="{{name}}">
             <label for="name">Name</label>
@@ -30,7 +30,7 @@
             <select id="group" disabled>
                 <option value="{{breed}}">{{breed}}</option>
             </select>
-            <button>SHELTER THE CAT</button>
+            <button type="submit">SHELTER THE CAT</button>
         </form>
 </body>
 </html>

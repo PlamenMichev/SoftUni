@@ -25,6 +25,7 @@ module.exports = async (req, res) => {
                     'Content-Type': 'text/html'
                 });
 
+                console.log(cats);
                 let modifiedCats = cats.map((cat) => 
                     `<li>
 					<img src="${path.join('./content/images/' + cat.image)}" alt="${cat.name}">

@@ -58,14 +58,11 @@ module.exports = async (req, res) => {
             cats.push(newCat);
             await fs.writeFile(path.join(__dirname, '../data/cats.json'), JSON.stringify(cats), 'utf8', function(err) {});
 
-            await fs.readFile(path.join(__dirname, '../views/home/index.html'), (err, data) => {
-                res.writeHead(301, {
-                    'Location': '/'
-                });
-
-                res.write(data);
-                res.end();
+            res.writeHead(301, {
+                'Location': '/'
             });
+
+            res.end();
         });
     } else if (pathname === '/cats/add-breed' && req.method === 'GET') {
         let filePath = path.join(`${__dirname}`, '../views/addBreed.html');
@@ -148,6 +145,47 @@ module.exports = async (req, res) => {
                 res.write(modifiedData);
                 res.end();
             });
+    } else if (pathname.includes('/cats-edit') && req.method === 'POST') {
+            let form = new formidable.IncomingForm();
+            form.uploadDir = `D:\\Softuni-Courses(Repo)\\SoftUni\\10.JS-Web\\Cat Shelter\\content\\images`
+
+            let catId = pathname.slice(pathname.lastIndexOf('/') + 1);
+            let cat = cats.filter((cat) => {
+                return cat.id == catId
+            })[0];
+
+            form.on('fileBegin', function(name, file) {
+                if (file.name !== '') {
+                    file.path = form.uploadDir + "/" + file.name;
+                }
+            });
+    
+            form.parse(req, async (err, fields, files) => {
+                if (err) {
+                    return err;
+                }
+                
+                let image = '';
+                if (files.upload.name === '') {
+                    image = cat.image;
+                    console.log(image + "Are be kume");
+                } else {
+                    image = files.upload.name
+                }
+                console.log(image);
+
+                cat.name = fields['name'];
+                cat.description = fields['description'];
+                cat.image = image;
+                cat.breed = fields['breed'];
+            
+            await fs.writeFile(path.join(__dirname, '../data/cats.json'), JSON.stringify(cats), 'utf8', function(err) {console.error(err)});
+
+            res.writeHead(301, {
+                'Location': '/'
+            });
+            res.end();
+            });
     } else if (pathname.includes('/cats-find-new-home') && req.method === 'GET') {
         await fs.readFile(path.join(__dirname, '../views/catShelter.html'), (err, data) => {
             res.writeHead(200, {
@@ -170,6 +208,20 @@ module.exports = async (req, res) => {
             res.write(modifiedData);
             res.end();
         });
+    } else if (pathname.includes('/cats-find-new-home') && req.method === 'POST') {
+        let catId = pathname.slice(pathname.lastIndexOf('/') + 1);
+        let newCollection = cats.filter((cat) => {
+            return cat.id != catId
+        });
+
+        fs.writeFile(path.join(__dirname, '../data/cats.json'), JSON.stringify(newCollection), 'utf8', function(err) {
+        });
+
+            res.writeHead(301, {
+                'Location': '/'
+            });
+            res.end();
+
     } else {
         return true;
     }
