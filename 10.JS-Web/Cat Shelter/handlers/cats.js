@@ -22,7 +22,7 @@ module.exports = async (req, res) => {
                 return;
             }
 
-            let catBreedPlaceholder = breeds.map((breed) => `<option value=${breed}>${breed}</option>`);
+            let catBreedPlaceholder = breeds.map((breed) => `<option value="${breed}">${breed}</option>`);
             let modifiedData = data.toString().replace('{{catBreeds}}', catBreedPlaceholder);
 
             res.writeHead(200, {
@@ -36,6 +36,10 @@ module.exports = async (req, res) => {
         let form = new formidable.IncomingForm();
         form.uploadDir = `D:\\Softuni-Courses(Repo)\\SoftUni\\10.JS-Web\\Cat Shelter\\content\\images`
 
+        form.on('fileBegin', function(name, file) {
+            file.path = form.uploadDir + "/" + file.name;
+        });
+
         form.parse(req, async (err, fields, files) => {
             if (err) {
                 return err;
@@ -48,11 +52,10 @@ module.exports = async (req, res) => {
                 name: fields['name'],
                 description: fields['description'],
                 breed: fields['breed'],
-                image: picture.upload.path + `.${picture.upload.name.slice(picture.upload.name.indexOf('.') + 1)}`
+                image: picture.upload.name
             };
 
             cats.push(newCat);
-            console.log(cats);
             await fs.writeFile(path.join(__dirname, '../data/cats.json'), JSON.stringify(cats), 'utf8', function(err) {});
 
             await fs.readFile(path.join(__dirname, '../views/home/index.html'), (err, data) => {
@@ -115,6 +118,57 @@ module.exports = async (req, res) => {
                 res.write(data);
                 res.end();
             });
+        });
+    } else if (pathname.includes('/cats-edit') && req.method === 'GET') {
+            await fs.readFile(path.join(__dirname, '../views/editCat.html'), (err, data) => {
+                res.writeHead(200, {
+                    'Content-Type': 'text/html'
+                });
+
+                let catId = pathname.slice(pathname.lastIndexOf('/') + 1);
+                let cat = cats.filter((cat) => {
+                    return cat.id == catId
+                });
+
+                cat = cat[0];
+
+                let modifiedData = data.toString().replace('{{id}}', catId);
+                modifiedData = modifiedData.replace('{{name}}', cat.name);
+                modifiedData = modifiedData.replace('{{description}}', cat.description);
+
+                modifiedData = modifiedData.replace(new RegExp('{{breed}}', 'g'), cat.breed);
+
+                let modifiedBreeds = breeds
+                .filter((b) => b != cat.breed)
+                .map((breed) => 
+                    `<option value="${breed}">${breed}</option>`
+                );
+                modifiedData = modifiedData.replace('{{breeds}}', modifiedBreeds);
+
+                res.write(modifiedData);
+                res.end();
+            });
+    } else if (pathname.includes('/cats-find-new-home') && req.method === 'GET') {
+        await fs.readFile(path.join(__dirname, '../views/catShelter.html'), (err, data) => {
+            res.writeHead(200, {
+                'Content-Type': 'text/html'
+            });
+
+            let catId = pathname.slice(pathname.lastIndexOf('/') + 1);
+            let cat = cats.filter((cat) => {
+                return cat.id == catId
+            });
+
+            cat = cat[0];
+
+            let modifiedData = data.toString().replace('{{id}}', catId);
+            modifiedData = modifiedData.replace(new RegExp('{{name}}', 'g'), cat.name);
+            modifiedData = modifiedData.replace('{{description}}', cat.description);
+            modifiedData = modifiedData.replace('{{image}}', `${path.join('../content/images/' + cat.image)}`);
+
+            modifiedData = modifiedData.replace(new RegExp('{{breed}}', 'g'), cat.breed);
+            res.write(modifiedData);
+            res.end();
         });
     } else {
         return true;
