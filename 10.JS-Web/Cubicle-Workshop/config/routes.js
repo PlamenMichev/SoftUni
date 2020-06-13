@@ -2,11 +2,10 @@ const cubeController = require('../controllers/cube-controller');
 
 module.exports = (app) => {
 
-    app.get('/', (req, res) => {
-        cubeController.getAllCubes((cubes) => {
-            res.render('index', {
-                cubes
-            });
+    app.get('/', async (req, res) => {
+        const cubes = await cubeController.getAllCubes();
+        res.render('index', {
+            cubes
         });
     });
 
@@ -14,8 +13,8 @@ module.exports = (app) => {
         res.render('create');
     });
 
-    app.post('/create', (req, res) => {
-        const newCube = cubeController.addCube(req.body.name, req.body.description, req.body.difficultyLevel, req.body.imageUrl);
+    app.post('/create', async (req, res) => {
+        const newCube = await cubeController.addCube(req.body.name, req.body.description, req.body.difficultyLevel, req.body.imageUrl);
         res.redirect('/');
     });
 
@@ -23,11 +22,10 @@ module.exports = (app) => {
         res.render('about');
     });
 
-    app.get('/details/:id', (req, res) => {
-        cubeController.getCubeById(req.params.id, (cube) => {
-            res.render('details', {
-                ...cube,
-            });
+    app.get('/details/:id', async (req, res) => {
+        const cube = await cubeController.getCubeById(req.params.id);
+        res.render('details', {
+            ...cube,
         });
     });
 
