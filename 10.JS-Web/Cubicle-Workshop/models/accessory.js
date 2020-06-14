@@ -23,4 +23,4 @@ AccessoryScheme.path('imageUrl').validate(function(url) {
     return url.startsWith('http://') || url.startsWith('https://');
 });
 
-module.exports = mongoose.model('Cube', AccessoryScheme);
+module.exports = mongoose.model('Accessory', AccessoryScheme);
