@@ -14,6 +14,13 @@ mongoose.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true } ,(er
 });
 
 require('./config/express')(app);
-require('./config/routes')(app);
+require('./routes/index-routes')(app);
+require('./routes/cube-routes')(app);
+require('./routes/accessory-routes')(app);
+
+
+app.get('*', (req, res) => {
+    res.render('404');
+});
 
 app.listen(config.port, console.log(`Listening on port ${config.port}! Now its up to you...`));

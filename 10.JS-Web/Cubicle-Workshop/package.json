@@ -3,6 +3,9 @@
     "description": "Workshop to practice express js and view engines",
     "authors": "Plamen Michev",
     "version": "1.0.0",
+    "scripts": {
+        "start": "nodemon"
+    },
     "main": "index.js",
     "dependencies": {
         "express": "^4.17.1",
