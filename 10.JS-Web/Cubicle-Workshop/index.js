@@ -17,6 +17,7 @@ require('./config/express')(app);
 require('./routes/index-routes')(app);
 require('./routes/cube-routes')(app);
 require('./routes/accessory-routes')(app);
+require('./routes/user-routes')(app);
 
 
 app.get('*', (req, res) => {

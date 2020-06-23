@@ -16,7 +16,7 @@ const AccessoryScheme = new mongoose.Schema({
     cubes: [{
         type: 'ObjectId',
         ref: 'Cube',
-    }]
+    }],
 });
 
 AccessoryScheme.path('imageUrl').validate(function(url) {
